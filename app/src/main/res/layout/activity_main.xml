@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFE4E1"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/cafe1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Café Expresso"
+                android:textColor="#800080" />
+
+            <RadioButton
+                android:id="@+id/cafe2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Capuccino"
+                android:textColor="#800080" />
+
+            <RadioButton
+                android:id="@+id/cafe3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Café com leite"
+                android:textColor="#800080" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <Button
+            android:id="@+id/menoscafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="-"
+            android:textColor="#800080"
+            android:onClick="SelecionarCafe"/>
+
+        <TextView
+            android:id="@+id/quanti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lineSpacingExtra="8sp"
+            android:text="0"
+            android:textColor="#800080"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/mais"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="+"
+            android:textColor="#800080"
+            android:onClick="SelecionarCafe"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0">
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="PreçoTotal"
+            android:textAlignment="center"
+            android:textColor="#800080"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Total"
+            android:layout_width="211dp"
+            android:layout_height="30dp"
+            android:text="R$:0,00"
+            android:textColor="#800080"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_weight="0">
+
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Preço Unitario"
+            android:textAlignment="center"
+            android:textColor="#800080"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Unidade"
+            android:layout_width="211dp"
+            android:layout_height="30dp"
+            android:text="R$:0,00"
+            android:textColor="#800080"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_weight="0">
+
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Pedido"
+            android:textColor="#800080"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_weight="0">
+
+
+        <TextView
+
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:text=" " />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="104dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/Go"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0"
+            android:onClick="Pedido"
+            android:textColor="#800080"
+            android:text="Fazer Pedido" />
+    </LinearLayout>
+
+
+</LinearLayout>
